@@ -1,0 +1,37 @@
+stuff = ("name","type","id","rate")
+material = ("pipe", "20mm", 1, "bundle")
+stock = [stuff,material]
+print(stock)
+stock[0] = "loading..."
+print(stock)
+def get_objects(tuple):
+  for objects in tuple:
+    print(objects)
+# get_objects(stuff)
+# get_objects(stock[1])
+scores = [2,56,23,45,12,90,87,78,6,55,3,43]
+scores.sort()
+# print(scores)
+def get_scores_data(list_of_scores):
+  highest_score = max(list_of_scores)
+  lowest_score = min(list_of_scores)
+  average_score = highest_score - lowest_score
+  return highest_score, lowest_score, average_score
+new_data = get_scores_data(scores)
+print(new_data)
+def calculate(first_number, sign, second_number):
+  if(sign == "+"):
+    return first_number + second_number
+  elif(sign == "-"):
+    return first_number - second_number
+  elif(sign == "*"):
+    return first_number * second_number
+  elif(sign == "/"):
+    return first_number / second_number
+  else:
+    return "Invalid operator! "
+print(calculate(2, "+", 3))
+print(calculate(5, "-", 2))
+print(calculate(5, "*", 2))
+print(calculate(10, "/", 5))
+print(calculate(22, "%", 10))
