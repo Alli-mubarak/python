@@ -52,4 +52,4 @@ new_setting = ('theme', 'Gothic')
 #print(add_setting(test_settings, new_setting))
 #print(update_setting(test_settings, new_setting))
 #print(delete_setting(test_settings, 'theme'))
-print(view_settings(test_setti
+print(view_settings(test_settings))
